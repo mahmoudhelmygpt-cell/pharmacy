@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<title>الدواء</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+  <header class="bg-green-600 text-white p-6 text-center text-2xl font-bold">صيدلية الدواء</header>
+
+  <section class="p-6 grid grid-cols-1 md:grid-cols-3 gap-4">
+    <div class="bg-white rounded-2xl shadow p-4">
+      <h2 class="text-xl font-bold mb-2">🕒 مواعيد العمل</h2>
+      <p>يومياً من 9 صباحاً حتى 12 منتصف الليل</p>
+    </div>
+    <div class="bg-white rounded-2xl shadow p-4">
+      <h2 class="text-xl font-bold mb-2">📍 العنوان</h2>
+      <p>ابني بيتك الحي العاشر د بجوار مكتبة الاوائل</p>
+    </div>
+    <div class="bg-white rounded-2xl shadow p-4">
+      <h2 class="text-xl font-bold mb-2">📞 تواصل معنا</h2>
+      <p>01503636081</p>
+    </div>
+  </section>
+
+  <section class="p-6">
+    <h2 class="text-2xl font-bold mb-4">الخدمات</h2>
+    <ul class="bg-white rounded-2xl shadow p-4 space-y-2">
+      <li>✔️ صرف الروشتات</li>
+      <li>✔️ قياس ضغط وسكر</li>
+      <li>✔️ توصيل للمنزل</li>
+    </ul>
+  </section>
+
+  <footer class="bg-green-600 text-white text-center p-4">© 2026 جميع الحقوق محفوظة لصيدلية الدواء لصاحابها د.محمود حلمي</footer>
+</body>
+</html>
