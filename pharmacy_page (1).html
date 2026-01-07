@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<title>صيدليتي</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 font-sans">
+<nav class="bg-white shadow p-4 flex justify-between items-center">
+  <div class="text-green-600 text-2xl font-bold">Helmy Care – حلمي كير</div>
+  <div class="flex gap-4 items-center">
+    <input id="searchInput" type="text" placeholder="ابحث باسم المنتج" class="border rounded-xl p-2 w-64" />
+    <button id="searchBtn" class="bg-green-600 text-white px-4 py-2 rounded-xl">بحث</button>
+  </div>
+</nav>
+  <div class="bg-green-500 text-white text-center p-3">📍 حدد موقعك لتفعيل الطلبات والتوصيل</div>
+
+  <section class="p-6 grid grid-cols-1 md:grid-cols-4 gap-4">
+    <div class="bg-white rounded-2xl shadow p-4">
+      <h2 class="text-xl font-bold mb-2">🕒 مواعيد العمل</h2>
+      <p>يومياً من 9 صباحاً حتى 12 منتصف الليل</p>
+    </div>
+    <div class="bg-white rounded-2xl shadow p-4">
+      <h2 class="text-xl font-bold mb-2">📍 العنوان</h2>
+      <p>اكتب عنوان الصيدلية هنا</p>
+    </div>
+    <div class="bg-white rounded-2xl shadow p-4">
+      <h2 class="text-xl font-bold mb-2">📞 تواصل معنا</h2>
+      <p>01000000000</p>
+    </div>
+  </section>
+
+  <section class="p-6">
+<h2 class="text-2xl font-bold mb-4">الأقسام</h2>
+<h2 class="text-2xl font-bold mb-4 mt-10">أدوية شهيرة</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+  <div class="bg-white p-4 rounded-2xl shadow text-center product-card">
+    <img src="93f86e89-40a1-4b5a-841e-d76dd909b116.png" class="mx-auto h-32" />
+    <h3 class="font-bold mt-2">Panadol Extra</h3>
+    <a target="_blank" href="https://wa.me/201503636081?text=عايز%20اطلب%20Panadol%20Extra%20من%20صيدلية%20محمود" class="block bg-green-600 text-white rounded-xl mt-3 p-2">اطلب على واتساب</a>
+  </div>
+  <div class="bg-white p-4 rounded-2xl shadow text-center product-card">
+    <img src="3148059a-025c-4fe3-a670-445e094f4ec4.png" class="mx-auto h-32" />
+    <h3 class="font-bold mt-2">Cetal Cold & Flu</h3>
+    <a target="_blank" href="https://wa.me/201503636081?text=عايز%20اطلب%20Cetal%20Cold%20and%20Flu%20من%20صيدلية%20محمود" class="block bg-green-600 text-white rounded-xl mt-3 p-2">اطلب على واتساب</a>
+  </div>
+  <div class="bg-white p-4 rounded-2xl shadow text-center product-card">
+    <img src="eecb221b-f0eb-475c-9705-5fff5c262e9e.png" class="mx-auto h-32" />
+    <h3 class="font-bold mt-2">Comtrex</h3>
+    <a target="_blank" href="https://wa.me/201503636081?text=عايز%20اطلب%20Comtrex%20من%20صيدلية%20محمود" class="block bg-green-600 text-white rounded-xl mt-3 p-2">اطلب على واتساب</a>
+  </div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-10">
+  <a href="#" class="bg-white p-6 rounded-2xl shadow hover:shadow-2xl transition text-center text-lg font-bold">💊 الأدوية</a>
+  <a href="#" class="bg-white p-6 rounded-2xl shadow hover:shadow-2xl transition text-center text-lg font-bold">🧴 العناية بالبشرة</div>
+  <a href="#" class="bg-white p-6 rounded-2xl shadow hover:shadow-2xl transition text-center text-lg font-bold">💇‍♀️ العناية بالشعر</div>
+  <a href="#" class="bg-white p-6 rounded-2xl shadow hover:shadow-2xl transition text-center text-lg font-bold">🤱 الأم والطفل</div>
+  <a href="#" class="bg-white p-6 rounded-2xl shadow hover:shadow-2xl transition text-center text-lg font-bold">💄 المكياج</div>
+  <a href="#" class="bg-white p-6 rounded-2xl shadow hover:shadow-2xl transition text-center text-lg font-bold">🍊 فيتامينات ومكملات</div>
+  <a href="#" class="bg-white p-6 rounded-2xl shadow hover:shadow-2xl transition text-center text-lg font-bold">🩺 مستلزمات طبية</div>
+  <a href="#" class="bg-white p-6 rounded-2xl shadow hover:shadow-2xl transition text-center text-lg font-bold">🐶 مستلزمات الحيوانات</div>
+</div>
+    <h2 class="text-2xl font-bold mb-4">الخدمات</h2>
+    <ul class="bg-white rounded-2xl shadow p-4 space-y-2">
+      <li>✔️ صرف الروشتات</li>
+      <li>✔️ قياس ضغط وسكر</li>
+      <li>✔️ توصيل للمنزل</li>
+    </ul>
+  </section>
+
+  <footer class="bg-green-600 text-white text-center p-4">علشان صحتك مش تجربة 💚<br>© جميع الحقوق محفوظة لصيدلية حلمي – المدير د. محمود</footer>
+<script>
+const searchBtn = document.getElementById('searchBtn');
+const searchInput = document.getElementById('searchInput');
+searchBtn.addEventListener('click', ()=>{
+  const term = searchInput.value.toLowerCase();
+  document.querySelectorAll('.product-card').forEach(card=>{
+    const name = card.querySelector('h3').innerText.toLowerCase();
+    card.style.display = name.includes(term) ? 'block' : 'none';
+  });
+});
+const btn = document.getElementById('menuBtn');
+const menu = document.getElementById('menu');
+btn.addEventListener('click', ()=>{
+  menu.classList.toggle('hidden');
+});
+</script>
+<script>
+</script>
+</body>
+</html>
