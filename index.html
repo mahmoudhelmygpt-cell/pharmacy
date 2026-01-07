@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<title>صيدليتي</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 font-sans">
+<nav class="bg-white shadow p-4 flex justify-between items-center">
+  <div class="text-green-600 text-2xl font-bold">صيدلية محمود</div>
+  <div class="flex gap-4 items-center">
+    <input type="text" placeholder="ابحث باسم المنتج" class="border rounded-xl p-2 w-64" />
+    <button class="bg-green-600 text-white px-4 py-2 rounded-xl">بحث</button>
+  </div>
+</nav>
+  <div class="bg-green-500 text-white text-center p-3">📍 حدد موقعك لتفعيل الطلبات والتوصيل</div>
+
+  <section class="p-6 grid grid-cols-1 md:grid-cols-4 gap-4">
+    <div class="bg-white rounded-2xl shadow p-4">
+      <h2 class="text-xl font-bold mb-2">🕒 مواعيد العمل</h2>
+      <p>يومياً من 9 صباحاً حتى 12 منتصف الليل</p>
+    </div>
+    <div class="bg-white rounded-2xl shadow p-4">
+      <h2 class="text-xl font-bold mb-2">📍 العنوان</h2>
+      <p>اكتب عنوان الصيدلية هنا</p>
+    </div>
+    <div class="bg-white rounded-2xl shadow p-4">
+      <h2 class="text-xl font-bold mb-2">📞 تواصل معنا</h2>
+      <p>01000000000</p>
+    </div>
+  </section>
+
+  <section class="p-6">
+    <h2 class="text-2xl font-bold mb-4">الخدمات</h2>
+    <ul class="bg-white rounded-2xl shadow p-4 space-y-2">
+      <li>✔️ صرف الروشتات</li>
+      <li>✔️ قياس ضغط وسكر</li>
+      <li>✔️ توصيل للمنزل</li>
+    </ul>
+  </section>
+
+  <footer class="bg-green-600 text-white text-center p-4">© 2026 جميع الحقوق محفوظة لصيدلية محمود</footer>
+<script>
+const btn = document.getElementById('menuBtn');
+const menu = document.getElementById('menu');
+btn.addEventListener('click', ()=>{
+  menu.classList.toggle('hidden');
+});
+</script>
+<script>
+</script>
+</body>
+</html>
