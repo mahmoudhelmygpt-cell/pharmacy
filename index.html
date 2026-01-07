@@ -2,11 +2,23 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8" />
-<title>الدواء</title>
+<title>صيدليتي</title>
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100 font-sans">
-  <header class="bg-green-600 text-white p-6 text-center text-2xl font-bold">صيدلية الدواء</header>
+  <header class="bg-green-600 text-white p-6 flex justify-between items-center text-2xl font-bold">
+  <span>صيدلية محمود</span>
+  <button id="menuBtn" class="text-3xl">⋮</button>
+</header>
+<div id="menu" class="hidden absolute top-20 left-4 bg-white rounded-2xl shadow-lg w-56 z-50">
+  <ul class="divide-y text-right">
+    <li class="p-3 hover:bg-gray-100 cursor-pointer">📦 طلب أدوية</li>
+    <li class="p-3 hover:bg-gray-100 cursor-pointer">💬 واتساب الصيدلية</li>
+    <li class="p-3 hover:bg-gray-100 cursor-pointer">🕒 مواعيد العمل</li>
+    <li class="p-3 hover:bg-gray-100 cursor-pointer">📍 موقع الصيدلية</li>
+    <li class="p-3 hover:bg-gray-100 cursor-pointer">📞 اتصل بنا</li>
+  </ul>
+</div>
 
   <section class="p-6 grid grid-cols-1 md:grid-cols-3 gap-4">
     <div class="bg-white rounded-2xl shadow p-4">
@@ -15,11 +27,11 @@
     </div>
     <div class="bg-white rounded-2xl shadow p-4">
       <h2 class="text-xl font-bold mb-2">📍 العنوان</h2>
-      <p>ابني بيتك الحي العاشر د بجوار مكتبة الاوائل</p>
+      <p>اكتب عنوان الصيدلية هنا</p>
     </div>
     <div class="bg-white rounded-2xl shadow p-4">
       <h2 class="text-xl font-bold mb-2">📞 تواصل معنا</h2>
-      <p>01503636081</p>
+      <p>01000000000</p>
     </div>
   </section>
 
@@ -32,6 +44,13 @@
     </ul>
   </section>
 
-  <footer class="bg-green-600 text-white text-center p-4">© 2026 جميع الحقوق محفوظة لصيدلية الدواء لصاحابها د.محمود حلمي</footer>
-</body>
+  <footer class="bg-green-600 text-white text-center p-4">© 2026 جميع الحقوق محفوظة لصيدلية محمود</footer>
+<script>
+const btn = document.getElementById('menuBtn');
+const menu = document.getElementById('menu');
+btn.addEventListener('click', ()=>{
+  menu.classList.toggle('hidden');
+});
+</script>
+</b
 </html>
